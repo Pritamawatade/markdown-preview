@@ -109,9 +109,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🌐 Contact
 
-Your Name - [Your Email or LinkedIn]
+- [@pritam_awatade]
 
-Project Link: [https://github.com/yourusername/markdown-previewer](https://github.com/yourusername/markdown-previewer)
+Project Link: [https://markdown-preview-kappa-lac.vercel.app/](https://github.com/Pritamawatade/markdown-preview)
 
 ---
 
