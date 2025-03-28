@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Previewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Markdown Previewer</h1>
+        </header>
+        <main class="markdown-container">
+            <div class="editor-section">
+                <h2>Markdown Input</h2>
+                <textarea id="markdown-input" placeholder="Type your markdown here..."></textarea>
+                <div class="controls">
+                    <button id="clear-btn">Clear</button>
+                </div>
+            </div>
+            <div class="preview-section">
+                <h2>Preview</h2>
+                <div id="preview-output" class="preview-output"></div>
+            </div>
+        </main>
+        <section class="markdown-guide">
+            <h2>Markdown Syntax Guide</h2>
+            <div class="guide-content">
+                <div class="guide-column">
+                    <h3>Basic Formatting</h3>
+                    <pre><code>
+# Heading 1
+## Heading 2
+### Heading 3
+
+**Bold Text**
+*Italic Text*
+~~Strikethrough~~
+                    </code></pre>
+                </div>
+                <div class="guide-column">
+                    <h3>Links & Lists</h3>
+                    <pre><code>
+[Link Text](http://example.com)
+
+- Unordered List
+- Item 2
+  - Nested Item
+
+1. Ordered List
+2. Item 2
+3. Item 3
+                    </code></pre>
+                </div>
+                <div class="guide-column">
+                    <h3>Code Blocks</h3>
+                    <pre><code>
+`Inline Code`
+
+```javascript
+function example() {
+    return "Code Block";
+}
+```
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
